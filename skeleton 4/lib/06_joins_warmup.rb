@@ -131,8 +131,8 @@ def alien_cast
       name
     FROM
       castings
-    JOIN actors ON castings.actor_id = actors.id
     JOIN movies ON castings.movie_id = movies.id
+    JOIN actors ON castings.actor_id = actors.id
     WHERE
       title = 'Alien';
   SQL
